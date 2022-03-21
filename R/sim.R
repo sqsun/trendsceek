@@ -17,7 +17,7 @@
 #' @export
 sim_pois <- function(lambda_int, win_len = 1){
     
-    pp = spatstat::rpoispp(lambda_int, win = spatstat::owin(c(0, win_len), c(0, win_len)))
+    pp = rpoispp(lambda_int, win = owin(c(0, win_len), c(0, win_len)))
 
     return(pp)
 }
